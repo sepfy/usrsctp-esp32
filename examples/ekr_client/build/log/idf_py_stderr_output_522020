@@ -1,0 +1,6 @@
+[0;33m--- esp-idf-monitor 1.4.0 on /dev/ttyACM0 115200 ---[0m
+[0;33m--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H ---[0m
+[0;33m0x4200aafc: uart_ll_get_rxfifo_len at /home/rich/ringtail/esp-idf-v5.2.1/components/hal/esp32s3/include/hal/uart_ll.h:375
+ (inlined by) esp_gdbstub_getchar at /home/rich/ringtail/esp-idf-v5.2.1/components/esp_gdbstub/src/gdbstub_transport.c:82
+[0m
+[0m

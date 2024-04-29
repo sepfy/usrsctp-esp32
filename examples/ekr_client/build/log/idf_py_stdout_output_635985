@@ -1,0 +1,120 @@
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x15 (USB_UART_CHIP_RESET),boot:0x2a (SPI_FAST_FLASH_BOOT)
+Saved PC:0x4037a696
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce3810,len:0x178c
+load:0x403c9700,len:0x4
+load:0x403c9704,len:0xcbc
+load:0x403cc700,len:0x2da0
+entry 0x403c9914
+[0;32mI (26) boot: ESP-IDF v5.2.1-dirty 2nd stage bootloader[0m
+[0;32mI (27) boot: compile time Apr 18 2024 15:41:54[0m
+[0;32mI (27) boot: Multicore bootloader[0m
+[0;32mI (30) boot: chip revision: v0.1[0m
+[0;32mI (34) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (39) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (44) boot.esp32s3: SPI Flash Size : 2MB[0m
+[0;32mI (48) boot: Enabling RNG early entropy source...[0m
+[0;32mI (54) boot: Partition Table:[0m
+[0;32mI (57) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (65) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (72) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (80) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (87) boot: End of partition table[0m
+[0;32mI (91) esp_image: segment 0: paddr=00010020 vaddr=3c0c0020 size=2adf0h (175600) map[0m
+[0;32mI (131) esp_image: segment 1: paddr=0003ae18 vaddr=3fc97e00 size=046f0h ( 18160) load[0m
+[0;32mI (135) esp_image: segment 2: paddr=0003f510 vaddr=40374000 size=00b08h (  2824) load[0m
+[0;32mI (138) esp_image: segment 3: paddr=00040020 vaddr=42000020 size=b34e0h (734432) map[0m
+[0;32mI (277) esp_image: segment 4: paddr=000f3508 vaddr=40374b08 size=13290h ( 78480) load[0m
+[0;32mI (303) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (303) boot: Disabling RNG early entropy source...[0m
+[0;32mI (314) cpu_start: Multicore app[0m
+[0;32mI (324) cpu_start: Pro cpu start user code[0m
+[0;32mI (324) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (324) cpu_start: Application information:[0m
+[0;32mI (327) cpu_start: Project name:     ekr_client[0m
+[0;32mI (332) cpu_start: App version:      signalling_works-65-gd0ae888-di[0m
+[0;32mI (339) cpu_start: Compile time:     Apr 18 2024 15:41:52[0m
+[0;32mI (345) cpu_start: ELF file SHA256:  75555c7f8...[0m
+[0;32mI (351) cpu_start: ESP-IDF:          v5.2.1-dirty[0m
+[0;32mI (356) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (361) cpu_start: Max chip rev:     v0.99 [0m
+[0;32mI (366) cpu_start: Chip rev:         v0.1[0m
+[0;32mI (371) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (378) heap_init: At 3FCA0A78 len 00048C98 (291 KiB): RAM[0m
+[0;32mI (384) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (390) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (396) heap_init: At 600FE010 len 00001FD8 (7 KiB): RTCRAM[0m
+[0;32mI (403) spi_flash: detected chip: generic[0m
+[0;32mI (407) spi_flash: flash io: dio[0m
+[0;33mW (411) spi_flash: Detected size(8192k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (424) sleep: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (431) sleep: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (438) main_task: Started on CPU0[0m
+[0;32mI (448) main_task: Calling app_main()[0m
+[0;32mI (478) wifi station: ESP_WIFI_MODE_STA[0m
+[0;32mI (478) pp: pp rom version: e7ae62f[0m
+[0;32mI (478) net80211: net80211 rom version: e7ae62f[0m
+I (488) wifi:wifi driver task: 3fcaad98, prio:23, stack:6656, core=0
+I (508) wifi:wifi firmware version: a9f5b59
+I (508) wifi:wifi certification version: v7.0
+I (508) wifi:config NVS flash: enabled
+I (508) wifi:config nano formating: disabled
+I (508) wifi:Init data frame dynamic rx buffer num: 32
+I (518) wifi:Init static rx mgmt buffer num: 5
+I (518) wifi:Init management short buffer num: 32
+I (528) wifi:Init dynamic tx buffer num: 32
+I (528) wifi:Init static tx FG buffer num: 2
+I (528) wifi:Init static rx buffer size: 1600
+I (538) wifi:Init static rx buffer num: 10
+I (538) wifi:Init dynamic rx buffer num: 32
+[0;32mI (548) wifi_init: rx ba win: 6[0m
+[0;32mI (548) wifi_init: tcpip mbox: 32[0m
+[0;32mI (548) wifi_init: udp mbox: 6[0m
+[0;32mI (558) wifi_init: tcp mbox: 6[0m
+[0;32mI (558) wifi_init: tcp tx win: 5760[0m
+[0;32mI (568) wifi_init: tcp rx win: 5760[0m
+[0;32mI (568) wifi_init: tcp mss: 1440[0m
+[0;32mI (568) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (578) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (588) phy_init: phy_version 640,cd64a1a,Jan 24 2024,17:28:12[0m
+I (628) wifi:mode : sta (34:85:18:8c:50:6c)
+I (628) wifi:enable tsf
+[0;32mI (628) wifi station: wifi_init_sta finished.[0m
+I (638) wifi:new:<3,1>, old:<1,0>, ap:<255,255>, sta:<3,1>, prof:1
+I (638) wifi:state: init -> auth (b0)
+I (648) wifi:state: auth -> assoc (0)
+I (658) wifi:state: assoc -> run (10)
+W (658) wifi:[ADDBA]rx delba, code:39, delete tid:0
+W (658) wifi:[ADDBA]rx delba, code:39, delete tid:0
+W (658) wifi:[ADDBA]rx delba, code:39, delete tid:5
+I (758) wifi:connected with ladybaby, aid = 3, channel 3, 40U, bssid = d8:0d:17:2c:5b:86
+I (758) wifi:security: WPA2-PSK, phy: bgn, rssi: -82
+I (768) wifi:pm start, type: 1
+
+I (768) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us
+I (778) wifi:set rx beacon pti, rx_bcn_pti: 0, bcn_timeout: 25000, mt_pti: 0, mt_time: 10000
+I (798) wifi:<ba-add>idx:0 (ifx:0, d8:0d:17:2c:5b:86), tid:5, ssn:1, winSize:64
+I (808) wifi:AP's beacon interval = 102400 us, DTIM period = 1
+[0;32mI (1788) esp_netif_handlers: sta ip: 192.168.1.229, mask: 255.255.255.0, gw: 192.168.1.1[0m
+[0;32mI (1788) wifi station: got ip:192.168.1.229[0m
+[0;32mI (1788) wifi station: connected to ap SSID:ladybaby password:4053487993[0m
+
+O 08:02:28.842928 0000 e4 7c 13 89 00 00 00 00 0d 0b 62 ab 01 00 00 56 e2 ae 8b 68 00 02 00 00 00 0a 08 00 8f ea 1a e0 c0 00 00 04 80 08 00 09 c0 0f c1 80 82 00 00 00 80 02 00 24 bd 8d 83 32 cc 8b ff ad 96 00 84 4a 4e d9 4c c5 60 02 16 f0 34 15 5e 24 ae ef 07 eb 95 c1 d9 2f 80 04 00 06 00 01 00 00 80 03 00 06 80 c1 00 00 # SCTP_PACKET
+I (1838) wifi:<ba-add>idx:1 (ifx:0, d8:0d:17:2c:5b:86), tid:0, ssn:3, winSize:64
+
+O 08:02:29.835357 0000 e4 7c 13 89 00 00 00 00 0d 0b 62 ab 01 00 00 56 e2 ae 8b 68 00 02 00 00 00 0a 08 00 8f ea 1a e0 c0 00 00 04 80 08 00 09 c0 0f c1 80 82 00 00 00 80 02 00 24 bd 8d 83 32 cc 8b ff ad 96 00 84 4a 4e d9 4c c5 60 02 16 f0 34 15 5e 24 ae ef 07 eb 95 c1 d9 2f 80 04 00 06 00 01 00 00 80 03 00 06 80 c1 00 00 # SCTP_PACKET
+
+O 08:02:31.855346 0000 e4 7c 13 89 00 00 00 00 0d 0b 62 ab 01 00 00 56 e2 ae 8b 68 00 02 00 00 00 0a 08 00 8f ea 1a e0 c0 00 00 04 80 08 00 09 c0 0f c1 80 82 00 00 00 80 02 00 24 bd 8d 83 32 cc 8b ff ad 96 00 84 4a 4e d9 4c c5 60 02 16 f0 34 15 5e 24 ae ef 07 eb 95 c1 d9 2f 80 04 00 06 00 01 00 00 80 03 00 06 80 c1 00 00 # SCTP_PACKET
+
+I 08:02:31.880650 0000 13 89 e4 7c e2 ae 8b 68 58 e5 22 47 02 00 01 90 c4 ca 86 90 00 02 00 00 00 0a 08 00 d8 13 ba 0f c0 00 00 04 80 08 00 09 c0 0f c1 80 82 00 00 00 80 02 00 24 39 aa cb 6d 19 fc e6 86 ed e9 f4 fa 54 8e ff a5 a4 2b ff e7 f4 c2 70 9a 64 04 51 57 8a 3a eb 5d 80 04 00 06 00 01 00 00 80 03 00 06 80 c1 00 00 00 07 01 38 4b 41 4d 45 2d 42 53 44 20 31 2e 31 00 00 00 00 e5 d5 21 66 00 00 00 00 74 c3 0e 00 00 00 00 00 60 ea 00 00 00 00 00 00 00 00 00 00 68 8b ae e2 c4 ca 86 90 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 04 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 04 00 00 00 00 00 00 00 e4 7c 13 89 00 00 01 00 00 00 00 00 00 00 00 00 01 00 00 56 e2 ae 8b 68 00 02 00 00 00 0a 08 00 8f ea 1a e0 c0 00 00 04 80 08 00 09 c0 0f c1 80 82 00 00 00 80 02 00 24 bd 8d 83 32 cc 8b ff ad 96 00 84 4a 4e d9 4c c5 60 02 16 f0 34 15 5e 24 ae ef 07 eb 95 c1 d9 2f 80 04 00 06 00 01 00 00 80 03 00 06 80 c1 00 00 02 00 01 90 c4 ca 86 90 00 02 00 00 00 0a 08 00 d8 13 ba 0f c0 00 00 04 80 08 00 09 c0 0f c1 80 82 00 00 00 80 02 00 24 39 aa cb 6d 19 fc e6 86 ed e9 f4 fa 54 8e ff a5 a4 2b ff e7 f4 c2 70 9a 64 04 51 57 8a 3a eb 5d 80 04 00 06 00 01 00 00 80 03 00 06 80 c1 00 00 d9 e7 58 68 28 ce 99 4b 4f 11 dc c7 15 bc 7e 75 35 78 8a 09 # SCTP_PACKET
+
+O 08:02:31.987167 0000 e4 7c 13 89 c4 ca 86 90 9b 74 28 85 0a 00 01 38 4b 41 4d 45 2d 42 53 44 20 31 2e 31 00 00 00 00 e5 d5 21 66 00 00 00 00 74 c3 0e 00 00 00 00 00 60 ea 00 00 00 00 00 00 00 00 00 00 68 8b ae e2 c4 ca 86 90 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 04 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 04 00 00 00 00 00 00 00 e4 7c 13 89 00 00 01 00 00 00 00 00 00 00 00 00 01 00 00 56 e2 ae 8b 68 00 02 00 00 00 0a 08 00 8f ea 1a e0 c0 00 00 04 80 08 00 09 c0 0f c1 80 82 00 00 00 80 02 00 24 bd 8d 83 32 cc 8b ff ad 96 00 84 4a 4e d9 4c c5 60 02 16 f0 34 15 5e 24 ae ef 07 eb 95 c1 d9 2f 80 04 00 06 00 01 00 00 80 03 00 06 80 c1 00 00 02 00 01 90 c4 ca 86 90 00 02 00 00 00 0a 08 00 d8 13 ba 0f c0 00 00 04 80 08 00 09 c0 0f c1 80 82 00 00 00 80 02 00 24 39 aa cb 6d 19 fc e6 86 ed e9 f4 fa 54 8e ff a5 a4 2b ff e7 f4 c2 70 9a 64 04 51 57 8a 3a eb 5d 80 04 00 06 00 01 00 00 80 03 00 06 80 c1 00 00 d9 e7 58 68 28 ce 99 4b 4f 11 dc c7 15 bc 7e 75 35 78 8a 09 # SCTP_PACKET
+
+O 08:02:35.985256 0000 e4 7c 13 89 c4 ca 86 90 9b 74 28 85 0a 00 01 38 4b 41 4d 45 2d 42 53 44 20 31 2e 31 00 00 00 00 e5 d5 21 66 00 00 00 00 74 c3 0e 00 00 00 00 00 60 ea 00 00 00 00 00 00 00 00 00 00 68 8b ae e2 c4 ca 86 90 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 04 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 04 00 00 00 00 00 00 00 e4 7c 13 89 00 00 01 00 00 00 00 00 00 00 00 00 01 00 00 56 e2 ae 8b 68 00 02 00 00 00 0a 08 00 8f ea 1a e0 c0 00 00 04 80 08 00 09 c0 0f c1 80 82 00 00 00 80 02 00 24 bd 8d 83 32 cc 8b ff ad 96 00 84 4a 4e d9 4c c5 60 02 16 f0 34 15 5e 24 ae ef 07 eb 95 c1 d9 2f 80 04 00 06 00 01 00 00 80 03 00 06 80 c1 00 00 02 00 01 90 c4 ca 86 90 00 02 00 00 00 0a 08 00 d8 13 ba 0f c0 00 00 04 80 08 00 09 c0 0f c1 80 82 00 00 00 80 02 00 24 39 aa cb 6d 19 fc e6 86 ed e9 f4 fa 54 8e ff a5 a4 2b ff e7 f4 c2 70 9a 64 04 51 57 8a 3a eb 5d 80 04 00 06 00 01 00 00 80 03 00 06 80 c1 00 00 d9 e7 58 68 28 ce 99 4b 4f 11 dc c7 15 bc 7e 75 35 78 8a 09 # SCTP_PACKET
+
+O 08:02:44.055255 0000 e4 7c 13 89 c4 ca 86 90 9b 74 28 85 0a 00 01 38 4b 41 4d 45 2d 42 53 44 20 31 2e 31 00 00 00 00 e5 d5 21 66 00 00 00 00 74 c3 0e 00 00 00 00 00 60 ea 00 00 00 00 00 00 00 00 00 00 68 8b ae e2 c4 ca 86 90 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 04 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 04 00 00 00 00 00 00 00 e4 7c 13 89 00 00 01 00 00 00 00 00 00 00 00 00 01 00 00 56 e2 ae 8b 68 00 02 00 00 00 0a 08 00 8f ea 1a e0 c0 00 00 04 80 08 00 09 c0 0f c1 80 82 00 00 00 80 02 00 24 bd 8d 83 32 cc 8b ff ad 96 00 84 4a 4e d9 4c c5 60 02 16 f0 34 15 5e 24 ae ef 07 eb 95 c1 d9 2f 80 04 00 06 00 01 00 00 80 03 00 06 80 c1 00 00 02 00 01 90 c4 ca 86 90 00 02 00 00 00 0a 08 00 d8 13 ba 0f c0 00 00 04 80 08 00 09 c0 0f c1 80 82 00 00 00 80 02 00 24 39 aa cb 6d 19 fc e6 86 ed e9 f4 fa 54 8e ff a5 a4 2b ff e7 f4 c2 70 9a 64 04 51 57 8a 3a eb 5d 80 04 00 06 00 01 00 00 80 03 00 06 80 c1 00 00 d9 e7 58 68 28 ce 99 4b 4f 11 dc c7 15 bc 7e 75 35 78 8a 09 # SCTP_PACKET
+
+O 08:03:00.125259 0000 e4 7c 13 89 c4 ca 86 90 9b 74 28 85 0a 00 01 38 4b 41 4d 45 2d 42 53 44 20 31 2e 31 00 00 00 00 e5 d5 21 66 00 00 00 00 74 c3 0e 00 00 00 00 00 60 ea 00 00 00 00 00 00 00 00 00 00 68 8b ae e2 c4 ca 86 90 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 04 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 04 00 00 00 00 00 00 00 e4 7c 13 89 00 00 01 00 00 00 00 00 00 00 00 00 01 00 00 56 e2 ae 8b 68 00 02 00 00 00 0a 08 00 8f ea 1a e0 c0 00 00 04 80 08 00 09 c0 0f c1 80 82 00 00 00 80 02 00 24 bd 8d 83 32 cc 8b ff ad 96 00 84 4a 4e d9 4c c5 60 02 16 f0 34 15 5e 24 ae ef 07 eb 95 c1 d9 2f 80 04 00 06 00 01 00 00 80 03 00 06 80 c1 00 00 02 00 01 90 c4 ca 86 90 00 02 00 00 00 0a 08 00 d8 13 ba 0f c0 00 00 04 80 08 00 09 c0 0f c1 80 82 00 00 00 80 02 00 24 39 aa cb 6d 19 fc e6 86 ed e9 f4 fa 54 8e ff a5 a4 2b ff e7 f4 c2 70 9a 64 04 51 57 8a 3a eb 5d 80 04 00 06 00 01 00 00 80 03 00 06 80 c1 00 00 d9 e7 58 68 28 ce 99 4b 4f 11 dc c7 15 bc 7e 75 35 78 8a 09 # SCTP_PACKET

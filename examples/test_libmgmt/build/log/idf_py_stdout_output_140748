@@ -1,0 +1,56 @@
+[1/7] Performing build step for 'bootloader'
+[1/1] cd /home/rich/ringtail/usrsctp/examples/test_libmgmt/build/bootloader/esp-idf/esptool_py && /home/rich/.espressif/python_env/idf5.2_py3.10_env/bin/python /home/rich/ringtail/esp-idf-v5.2.1/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x0 /home/rich/ringtail/usrsctp/examples/test_libmgmt/build/bootloader/bootloader.bin
+Bootloader binary size 0x5250 bytes. 0x2db0 bytes (36%) free.
+[2/5] Linking CXX executable test_libmgmt.elf
+[3/5] Generating binary image from built executable
+esptool.py v4.7.0
+Creating esp32s3 image...
+Merged 2 ELF sections
+Successfully created esp32s3 image.
+Generated /home/rich/ringtail/usrsctp/examples/test_libmgmt/build/test_libmgmt.bin
+[4/5] cd /home/rich/ringtail/usrsctp/examples/test_libmgmt/build/esp-idf/esptool_py && /home/rich/.espressif/python_env/idf5.2_py3.10_env/bin/python /home/rich/ringtail/esp-idf-v5.2.1/components/partition_table/check_sizes.py --offset 0x8000 partition --type app /home/rich/ringtail/usrsctp/examples/test_libmgmt/build/partition_table/partition-table.bin /home/rich/ringtail/usrsctp/examples/test_libmgmt/build/test_libmgmt.bin
+test_libmgmt.bin binary size 0x52850 bytes. Smallest app partition is 0x100000 bytes. 0xad7b0 bytes (68%) free.
+[4/5] cd /home/rich/ringtail/esp-idf-v5.2.1/components/esptool_py && /usr/bin/cmake -D IDF_PATH=/home/rich/ringtail/esp-idf-v5.2.1 -D "SERIAL_TOOL=/home/rich/.espressif/python_env/idf5.2_py3.10_env/bin/python;;/home/rich/ringtail/esp-idf-v5.2.1/components/esptool_py/esptool/esptool.py;--chip;esp32s3" -D "SERIAL_TOOL_ARGS=--before=default_reset;--after=hard_reset;write_flash;@flash_args" -D WORKING_DIRECTORY=/home/rich/ringtail/usrsctp/examples/test_libmgmt/build -P /home/rich/ringtail/esp-idf-v5.2.1/components/esptool_py/run_serial_tool.cmake
+esptool.py --chip esp32s3 -p /dev/ttyACM0 -b 460800 --before=default_reset --after=hard_reset write_flash --flash_mode dio --flash_freq 80m --flash_size 2MB 0x0 bootloader/bootloader.bin 0x10000 test_libmgmt.bin 0x8000 partition_table/partition-table.bin
+esptool.py v4.7.0
+Serial port /dev/ttyACM0
+Connecting...
+Chip is ESP32-S3 (QFN56) (revision v0.1)
+Features: WiFi, BLE, Embedded PSRAM 8MB (AP_3v3)
+Crystal is 40MHz
+MAC: 34:85:18:8c:50:6c
+Uploading stub...
+Running stub...
+Stub running...
+Changing baud rate to 460800
+Changed.
+Configuring flash size...
+Flash will be erased from 0x00000000 to 0x00005fff...
+Flash will be erased from 0x00010000 to 0x00062fff...
+Flash will be erased from 0x00008000 to 0x00008fff...
+Compressed 21072 bytes to 13079...
+Writing at 0x00000000... (100 %)
+Wrote 21072 bytes (13079 compressed) at 0x00000000 in 0.5 seconds (effective 371.8 kbit/s)...
+Hash of data verified.
+Compressed 338000 bytes to 183632...
+Writing at 0x00010000... (8 %)
+Writing at 0x0001bdc9... (16 %)
+Writing at 0x000255a1... (25 %)
+Writing at 0x0002b25f... (33 %)
+Writing at 0x000318f7... (41 %)
+Writing at 0x00037d82... (50 %)
+Writing at 0x0003dd44... (58 %)
+Writing at 0x00043db8... (66 %)
+Writing at 0x00049b38... (75 %)
+Writing at 0x0004fcc0... (83 %)
+Writing at 0x00059d09... (91 %)
+Writing at 0x00060f99... (100 %)
+Wrote 338000 bytes (183632 compressed) at 0x00010000 in 2.7 seconds (effective 1014.7 kbit/s)...
+Hash of data verified.
+Compressed 3072 bytes to 103...
+Writing at 0x00008000... (100 %)
+Wrote 3072 bytes (103 compressed) at 0x00008000 in 0.1 seconds (effective 437.9 kbit/s)...
+Hash of data verified.
+
+Leaving...
+Hard resetting via RTS pin...

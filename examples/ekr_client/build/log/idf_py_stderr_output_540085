@@ -1,0 +1,22 @@
+[0;33m--- esp-idf-monitor 1.4.0 on /dev/ttyACM0 115200 ---[0m
+[0;33m--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H ---[0m
+[0;33m0x40056f6f: memcpy in ROM
+[0m
+[0;33m0x4037d010: _frxt_dispatch at /home/rich/ringtail/esp-idf-v5.2.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/portasm.S:501
+0x4037cfb5: _frxt_int_exit at /home/rich/ringtail/esp-idf-v5.2.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/portasm.S:263
+[0m
+[0;33m0x40377080: xPortEnterCriticalTimeoutSafe at /home/rich/ringtail/esp-idf-v5.2.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/include/freertos/portmacro.h:583
+ (inlined by) vPortEnterCriticalSafe at /home/rich/ringtail/esp-idf-v5.2.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/include/freertos/portmacro.h:592
+ (inlined by) esp_timer_impl_set_alarm_id at /home/rich/ringtail/esp-idf-v5.2.1/components/esp_timer/src/esp_timer_impl_systimer.c:80
+0x4037cfbf: _frxt_dispatch at /home/rich/ringtail/esp-idf-v5.2.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/portasm.S:452
+[0m
+[0;33m0x40377080: xPortEnterCriticalTimeoutSafe at /home/rich/ringtail/esp-idf-v5.2.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/include/freertos/portmacro.h:583
+ (inlined by) vPortEnterCriticalSafe at /home/rich/ringtail/esp-idf-v5.2.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/include/freertos/portmacro.h:592
+ (inlined by) esp_timer_impl_set_alarm_id at /home/rich/ringtail/esp-idf-v5.2.1/components/esp_timer/src/esp_timer_impl_systimer.c:80
+0x400556d5: strlen in ROM
+0x400556e5: strlen in ROM
+[0m
+[0;33m0x4037d00d: _frxt_dispatch at /home/rich/ringtail/esp-idf-v5.2.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/portasm.S:500
+0x4037cfb2: _frxt_int_exit at /home/rich/ringtail/esp-idf-v5.2.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/portasm.S:246
+[0m
+[0m

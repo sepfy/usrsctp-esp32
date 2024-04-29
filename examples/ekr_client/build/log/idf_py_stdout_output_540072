@@ -1,0 +1,76 @@
+[1/5] cd /home/rich/ringtail/usrsctp/examples/ekr_client/build/esp-idf/esptool_py && /home/rich/.espressif/python_env/idf5.2_py3.10_env/bin/python /home/rich/ringtail/esp-idf-v5.2.1/components/partition_table/check_sizes.py --offset 0x8000 partition --type app /home/rich/ringtail/usrsctp/examples/ekr_client/build/partition_table/partition-table.bin /home/rich/ringtail/usrsctp/examples/ekr_client/build/ekr_client.bin
+ekr_client.bin binary size 0xf6960 bytes. Smallest app partition is 0x100000 bytes. 0x96a0 bytes (4%) free.
+Warning: The smallest app partition is nearly full (4% free space left)!
+[2/5] cd /home/rich/ringtail/usrsctp/examples/ekr_client/build/bootloader && /usr/bin/cmake --build .
+[1/1] cd /home/rich/ringtail/usrsctp/examples/ekr_client/build/bootloader/esp-idf/esptool_py && /home/rich/.espressif/python_env/idf5.2_py3.10_env/bin/python /home/rich/ringtail/esp-idf-v5.2.1/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x0 /home/rich/ringtail/usrsctp/examples/ekr_client/build/bootloader/bootloader.bin
+Bootloader binary size 0x5250 bytes. 0x2db0 bytes (36%) free.
+[2/3] cd /home/rich/ringtail/esp-idf-v5.2.1/components/esptool_py && /usr/bin/cmake -D IDF_PATH=/home/rich/ringtail/esp-idf-v5.2.1 -D "SERIAL_TOOL=/home/rich/.espressif/python_env/idf5.2_py3.10_env/bin/python;;/home/rich/ringtail/esp-idf-v5.2.1/components/esptool_py/esptool/esptool.py;--chip;esp32s3" -D "SERIAL_TOOL_ARGS=--before=default_reset;--after=hard_reset;write_flash;@flash_args" -D WORKING_DIRECTORY=/home/rich/ringtail/usrsctp/examples/ekr_client/build -P /home/rich/ringtail/esp-idf-v5.2.1/components/esptool_py/run_serial_tool.cmake
+esptool.py --chip esp32s3 -p /dev/ttyACM0 -b 460800 --before=default_reset --after=hard_reset write_flash --flash_mode dio --flash_freq 80m --flash_size 2MB 0x0 bootloader/bootloader.bin 0x10000 ekr_client.bin 0x8000 partition_table/partition-table.bin
+esptool.py v4.7.0
+Serial port /dev/ttyACM0
+Connecting...
+Chip is ESP32-S3 (QFN56) (revision v0.1)
+Features: WiFi, BLE, Embedded PSRAM 8MB (AP_3v3)
+Crystal is 40MHz
+MAC: 34:85:18:8c:50:6c
+Uploading stub...
+Running stub...
+Stub running...
+Changing baud rate to 460800
+Changed.
+Configuring flash size...
+Flash will be erased from 0x00000000 to 0x00005fff...
+Flash will be erased from 0x00010000 to 0x00106fff...
+Flash will be erased from 0x00008000 to 0x00008fff...
+Compressed 21072 bytes to 13080...
+Writing at 0x00000000... (100 %)
+Wrote 21072 bytes (13080 compressed) at 0x00000000 in 0.5 seconds (effective 362.7 kbit/s)...
+Hash of data verified.
+Compressed 1010016 bytes to 615640...
+Writing at 0x00010000... (2 %)
+Writing at 0x0001d472... (5 %)
+Writing at 0x00027607... (7 %)
+Writing at 0x0002d170... (10 %)
+Writing at 0x0003312e... (13 %)
+Writing at 0x0003e6bd... (15 %)
+Writing at 0x00044eaa... (18 %)
+Writing at 0x0004b2da... (21 %)
+Writing at 0x000515ae... (23 %)
+Writing at 0x00056de7... (26 %)
+Writing at 0x0005ccba... (28 %)
+Writing at 0x00062b22... (31 %)
+Writing at 0x0006877c... (34 %)
+Writing at 0x0006e5ab... (36 %)
+Writing at 0x0007363f... (39 %)
+Writing at 0x00078758... (42 %)
+Writing at 0x0007d89c... (44 %)
+Writing at 0x00082cee... (47 %)
+Writing at 0x00088180... (50 %)
+Writing at 0x0008dfb3... (52 %)
+Writing at 0x00093b2b... (55 %)
+Writing at 0x0009a14a... (57 %)
+Writing at 0x0009faf8... (60 %)
+Writing at 0x000a5016... (63 %)
+Writing at 0x000ab429... (65 %)
+Writing at 0x000b2644... (68 %)
+Writing at 0x000b9227... (71 %)
+Writing at 0x000bf395... (73 %)
+Writing at 0x000c5b58... (76 %)
+Writing at 0x000cc0fb... (78 %)
+Writing at 0x000d299e... (81 %)
+Writing at 0x000d940e... (84 %)
+Writing at 0x000dfe0b... (86 %)
+Writing at 0x000ead30... (89 %)
+Writing at 0x000f0d77... (92 %)
+Writing at 0x000f6e62... (94 %)
+Writing at 0x000fd100... (97 %)
+Writing at 0x00103218... (100 %)
+Wrote 1010016 bytes (615640 compressed) at 0x00010000 in 8.1 seconds (effective 999.6 kbit/s)...
+Hash of data verified.
+Compressed 3072 bytes to 103...
+Writing at 0x00008000... (100 %)
+Wrote 3072 bytes (103 compressed) at 0x00008000 in 0.1 seconds (effective 463.3 kbit/s)...
+Hash of data verified.
+
+Leaving...
+Hard resetting via RTS pin...

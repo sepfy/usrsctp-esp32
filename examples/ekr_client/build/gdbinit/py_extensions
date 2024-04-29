@@ -1,0 +1,7 @@
+
+# Add Python GDB extensions
+python
+import sys
+sys.path = ['/home/rich/ringtail/esp-idf-v5.2.1/tools', '/usr/lib/python310.zip', '/usr/lib/python3.10', '/usr/lib/python3.10/lib-dynload', '/home/rich/.espressif/python_env/idf5.2_py3.10_env/lib/python3.10/site-packages', '/home/rich/ringtail/esp-idf-v5.2.1/tools/idf_py_actions']
+import freertos_gdb
+end

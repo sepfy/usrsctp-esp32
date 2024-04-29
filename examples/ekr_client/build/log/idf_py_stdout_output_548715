@@ -1,0 +1,168 @@
+[0;32mI (131) esp_image: segment 1: paddr=0003af18 vaddr=3fc97eESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x15 (USB_UART_CHIP_RESET),boot:0x2a (SPI_FAST_FLASH_BOOT)
+Saved PC:0x400450f4
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce3810,len:0x178c
+load:0x403c9700,len:0x4
+load:0x403c9704,len:0xcbc
+load:0x403cc700,len:0x2da0
+entry 0x403c9914
+[0;32mI (26) boot: ESP-IDF v5.2.1-dirty 2nd stage bootloader[0m
+[0;32mI (27) boot: compile time Apr 18 2024 07:45:43[0m
+[0;32mI (27) boot: Multicore bootloader[0m
+[0;32mI (30) boot: chip revision: v0.1[0m
+[0;32mI (34) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (39) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (44) boot.esp32s3: SPI Flash Size : 2MB[0m
+[0;32mI (48) boot: Enabling RNG early entropy source...[0m
+[0;32mI (54) boot: Partition Table:[0m
+[0;32mI (57) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (65) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (72) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (80) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (87) boot: End of partition table[0m
+[0;32mI (91) esp_image: segment 0: paddr=00010020 vaddr=3c0c0020 size=2aef0h (175856) map[0m
+[0;32mI (131) esp_image: segment 1: paddr=0003af18 vaddr=3fc97e00 size=046f0h ( 18160) load[0m
+[0;32mI (135) esp_image: segment 2: paddr=0003f610 vaddr=40374000 size=00a08h (  2568) load[0m
+[0;32mI (138) esp_image: segment 3: paddr=00040020 vaddr=42000020 size=b3574h (734580) map[0m
+[0;32mI (277) esp_image: segment 4: paddr=000f359c vaddr=40374a08 size=13390h ( 78736) load[0m
+[0;32mI (303) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (303) boot: Disabling RNG early entropy source...[0m
+[0;32mI (315) cpu_start: Multicore app[0m
+[0;32mI (324) cpu_start: Pro cpu start user code[0m
+[0;32mI (324) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (325) cpu_start: Application information:[0m
+[0;32mI (327) cpu_start: Project name:     ekr_client[0m
+[0;32mI (333) cpu_start: App version:      signalling_works-64-g820814b-di[0m
+[0;32mI (340) cpu_start: Compile time:     Apr 18 2024 14:41:36[0m
+[0;32mI (346) cpu_start: ELF file SHA256:  3b8c41b05...[0m
+[0;32mI (351) cpu_start: ESP-IDF:          v5.2.1-dirty[0m
+[0;32mI (356) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (361) cpu_start: Max chip rev:     v0.99 [0m
+[0;32mI (366) cpu_start: Chip rev:         v0.1[0m
+[0;32mI (371) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (378) heap_init: At 3FCA0A70 len 00048CA0 (291 KiB): RAM[0m
+[0;32mI (384) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (390) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (396) heap_init: At 600FE010 len 00001FD8 (7 KiB): RTCRAM[0m
+[0;32mI (404) spi_flash: detected chip: generic[0m
+[0;32mI (407) spi_flash: flash io: dio[0m
+[0;33mW (411) spi_flash: Detected size(8192k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (425) sleep: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (431) sleep: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (439) main_task: Started on CPU0[0m
+[0;32mI (449) main_task: Calling app_main()[0m
+[0;32mI (479) wifi station: ESP_WIFI_MODE_STA[0m
+[0;32mI (479) pp: pp rom version: e7ae62f[0m
+[0;32mI (479) net80211: net80211 rom version: e7ae62f[0m
+I (489) wifi:wifi driver task: 3fcaad90, prio:23, stack:6656, core=0
+I (509) wifi:wifi firmware version: a9f5b59
+I (509) wifi:wifi certification version: v7.0
+I (509) wifi:config NVS flash: enabled
+I (509) wifi:config nano formating: disabled
+I (509) wifi:Init data frame dynamic rx buffer num: 32
+I (519) wifi:Init static rx mgmt buffer num: 5
+I (519) wifi:Init management short buffer num: 32
+I (529) wifi:Init dynamic tx buffer num: 32
+I (529) wifi:Init static tx FG buffer num: 2
+I (529) wifi:Init static rx buffer size: 1600
+I (539) wifi:Init static rx buffer num: 10
+I (539) wifi:Init dynamic rx buffer num: 32
+[0;32mI (549) wifi_init: rx ba win: 6[0m
+[0;32mI (549) wifi_init: tcpip mbox: 32[0m
+[0;32mI (549) wifi_init: udp mbox: 6[0m
+[0;32mI (559) wifi_init: tcp mbox: 6[0m
+[0;32mI (559) wifi_init: tcp tx win: 5760[0m
+[0;32mI (569) wifi_init: tcp rx win: 5760[0m
+[0;32mI (569) wifi_init: tcp mss: 1440[0m
+[0;32mI (569) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (579) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (589) phy_init: phy_version 640,cd64a1a,Jan 24 2024,17:28:12[0m
+I (629) wifi:mode : sta (34:85:18:8c:50:6c)
+I (629) wifi:enable tsf
+[0;32mI (629) wifi station: wifi_init_sta finished.[0m
+I (639) wifi:new:<2,1>, old:<1,0>, ap:<255,255>, sta:<2,1>, prof:1
+I (639) wifi:state: init -> auth (b0)
+I (639) wifi:state: auth -> assoc (0)
+I (649) wifi:state: assoc -> run (10)
+I (659) wifi:connected with ladybaby, aid = 4, channel 2, 40U, bssid = 18:a6:f7:f4:9b:1a
+I (659) wifi:security: WPA2-PSK, phy: bgn, rssi: -45
+I (659) wifi:pm start, type: 1
+
+I (659) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us
+I (669) wifi:set rx beacon pti, rx_bcn_pti: 0, bcn_timeout: 25000, mt_pti: 0, mt_time: 10000
+I (689) wifi:<ba-add>idx:0 (ifx:0, 18:a6:f7:f4:9b:1a), tid:5, ssn:0, winSize:64
+I (699) wifi:AP's beacon interval = 102400 us, DTIM period = 1
+[0;32mI (1679) esp_netif_handlers: sta ip: 192.168.1.229, mask: 255.255.255.0, gw: 192.168.1.1[0m
+[0;32mI (1679) wifi station: got ip:192.168.1.229[0m
+[0;32mI (1679) wifi station: connected to ap SSID:ladybaby password:4053487993[0m
+*** allocating
+Pre recv 54
+
+O 01:20:55.663393 0000 f9 a1 13 89 00 00 00 00 43 2d c6 90 01 00 00 56 41 20 09 f0 00 02 00 00 00 0a 08 00 28 41 af b7 c0 00 00 04 80 08 00 09 c0 0f c1 80 82 00 00 00 80 02 00 24 ea da b4 94 e6 95 44 dc 8e 5a 5f 8c 32 47 13 78 8c c5 e7 ac af 1a 02 dc 39 9c 18 17 29 5a 6a eb 80 04 00 06 00 01 00 00 80 03 00 06 80 c1 00 00 # SCTP_PACKET
+userconnect 0
+I (1719) wifi:<ba-add>idx:1 (ifx:0, 18:a6:f7:f4:9b:1a), tid:0, ssn:0, winSize:64
+Post recv
+
+I 01:20:55.701829 0000 13 89 f9 a1 41 20 09 f0 67 02 ed ff 02 00 01 90 dd 8b 99 6f 00 02 00 00 00 0a 08 00 8d c2 e2 d2 c0 00 00 04 80 08 00 09 c0 0f c1 80 82 00 00 00 80 02 00 24 b7 8f 1f cc 3f 0e 75 8e 8b 56 84 10 55 dd 0b 94 93 d1 3c 3e 46 8d f4 d0 13 9d d1 ab 87 c0 67 50 80 04 00 06 00 01 00 00 80 03 00 06 80 c1 00 00 00 07 01 38 4b 41 4d 45 2d 42 53 44 20 31 2e 31 00 00 00 00 8d 77 21 66 00 00 00 00 c9 a9 03 00 00 00 00 00 60 ea 00 00 00 00 00 00 00 00 00 00 f0 09 20 41 dd 8b 99 6f 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 04 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 04 00 00 00 00 00 00 00 f9 a1 13 89 00 00 01 00 00 00 00 00 00 00 00 00 01 00 00 56 41 20 09 f0 00 02 00 00 00 0a 08 00 28 41 af b7 c0 00 00 04 80 08 00 09 c0 0f c1 80 82 00 00 00 80 02 00 24 ea da b4 94 e6 95 44 dc 8e 5a 5f 8c 32 47 13 78 8c c5 e7 ac af 1a 02 dc 39 9c 18 17 29 5a 6a eb 80 04 00 06 00 01 00 00 80 03 00 06 80 c1 00 00 02 00 01 90 dd 8b 99 6f 00 02 00 00 00 0a 08 00 8d c2 e2 d2 c0 00 00 04 80 08 00 09 c0 0f c1 80 82 00 00 00 80 02 00 24 b7 8f 1f cc 3f 0e 75 8e 8b 56 84 10 55 dd 0b 94 93 d1 3c 3e 46 8d f4 d0 13 9d d1 ab 87 c0 67 50 80 04 00 06 00 01 00 00 80 03 00 06 80 c1 00 00 e9 d9 bf 4e 1e 5e b1 9a 42 ba 07 95 35 b7 a8 de 99 23 1f 47 # SCTP_PACKET
+
+O 01:20:56.655388 0000 f9 a1 13 89 00 00 00 00 43 2d c6 90 01 00 00 56 41 20 09 f0 00 02 00 00 00 0a 08 00 28 41 af b7 c0 00 00 04 80 08 00 09 c0 0f c1 80 82 00 00 00 80 02 00 24 ea da b4 94 e6 95 44 dc 8e 5a 5f 8c 32 47 13 78 8c c5 e7 ac af 1a 02 dc 39 9c 18 17 29 5a 6a eb 80 04 00 06 00 01 00 00 80 03 00 06 80 c1 00 00 # SCTP_PACKET
+*** conninput 412
+*** pre sctp_common_input_processing 12 412
+
+O 01:20:56.807206 0000 f9 a1 13 89 dd 8b 99 6f ca b1 74 9d 0a 00 01 38 4b 41 4d 45 2d 42 53 44 20 31 2e 31 00 00 00 00 8d 77 21 66 00 00 00 00 c9 a9 03 00 00 00 00 00 60 ea 00 00 00 00 00 00 00 00 00 00 f0 09 20 41 dd 8b 99 6f 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 04 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 04 00 00 00 00 00 00 00 f9 a1 13 89 00 00 01 00 00 00 00 00 00 00 00 00 01 00 00 56 41 20 09 f0 00 02 00 00 00 0a 08 00 28 41 af b7 c0 00 00 04 80 08 00 09 c0 0f c1 80 82 00 00 00 80 02 00 24 ea da b4 94 e6 95 44 dc 8e 5a 5f 8c 32 47 13 78 8c c5 e7 ac af 1a 02 dc 39 9c 18 17 29 5a 6a eb 80 04 00 06 00 01 00 00 80 03 00 06 80 c1 00 00 02 00 01 90 dd 8b 99 6f 00 02 00 00 00 0a 08 00 8d c2 e2 d2 c0 00 00 04 80 08 00 09 c0 0f c1 80 82 00 00 00 80 02 00 24 b7 8f 1f cc 3f 0e 75 8e 8b 56 84 10 55 dd 0b 94 93 d1 3c 3e 46 8d f4 d0 13 9d d1 ab 87 c0 67 50 80 04 00 06 00 01 00 00 80 03 00 06 80 c1 00 00 e9 d9 bf 4e 1e 5e b1 9a 42 ba 07 95 35 b7 a8 de 99 23 1f 47 # SCTP_PACKET
+*** post sctp_common_input_processing
+*** conninput done
+Pre recv 54
+Post recv
+
+I 01:20:56.894536 0000 13 89 f9 a1 41 20 09 f0 dd d4 4d 4e 02 00 01 90 6f 84 f1 65 00 02 00 00 00 0a 08 00 f2 61 39 68 c0 00 00 04 80 08 00 09 c0 0f c1 80 82 00 00 00 80 02 00 24 a6 f7 9b 4d d9 5d d9 53 e9 ed 6b 04 da ad 84 3f 2a c6 66 51 4f 1e 38 a7 0c 85 23 df ac 0e ca 21 80 04 00 06 00 01 00 00 80 03 00 06 80 c1 00 00 00 07 01 38 4b 41 4d 45 2d 42 53 44 20 31 2e 31 00 00 00 00 8e 77 21 66 00 00 00 00 d8 4f 03 00 00 00 00 00 60 ea 00 00 00 00 00 00 00 00 00 00 f0 09 20 41 6f 84 f1 65 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 04 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 04 00 00 00 00 00 00 00 f9 a1 13 89 00 00 01 00 00 00 00 00 00 00 00 00 01 00 00 56 41 20 09 f0 00 02 00 00 00 0a 08 00 28 41 af b7 c0 00 00 04 80 08 00 09 c0 0f c1 80 82 00 00 00 80 02 00 24 ea da b4 94 e6 95 44 dc 8e 5a 5f 8c 32 47 13 78 8c c5 e7 ac af 1a 02 dc 39 9c 18 17 29 5a 6a eb 80 04 00 06 00 01 00 00 80 03 00 06 80 c1 00 00 02 00 01 90 6f 84 f1 65 00 02 00 00 00 0a 08 00 f2 61 39 68 c0 00 00 04 80 08 00 09 c0 0f c1 80 82 00 00 00 80 02 00 24 a6 f7 9b 4d d9 5d d9 53 e9 ed 6b 04 da ad 84 3f 2a c6 66 51 4f 1e 38 a7 0c 85 23 df ac 0e ca 21 80 04 00 06 00 01 00 00 80 03 00 06 80 c1 00 00 9e b7 ea 6b ae 4f 48 36 f4 49 54 c1 99 75 f0 83 27 b8 aa de # SCTP_PACKET
+*** conninput 412
+*** pre sctp_common_input_processing 12 412
+*** post sctp_common_input_processing
+*** conninput done
+Pre recv 54
+Post recv
+
+I 01:20:58.006824 0000 13 89 f9 a1 41 20 09 f0 a2 18 59 10 0b 00 00 04 # SCTP_PACKET
+
+O 01:20:58.795281 0000 f9 a1 13 89 dd 8b 99 6f ca b1 74 9d 0a 00 01 38 4b 41 4d 45 2d 42 53 44 20 31 2e 31 00 00 00 00 8d 77 21 66 00 00 00 00 c9 a9 03 00 00 00 00 00 60 ea 00 00 00 00 00 00 00 00 00 00 f0 09 20 41 dd 8b 99 6f 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 04 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 04 00 00 00 00 00 00 00 f9 a1 13 89 00 00 01 00 00 00 00 00 00 00 00 00 01 00 00 56 41 20 09 f0 00 02 00 00 00 0a 08 00 28 41 af b7 c0 00 00 04 80 08 00 09 c0 0f c1 80 82 00 00 00 80 02 00 24 ea da b4 94 e6 95 44 dc 8e 5a 5f 8c 32 47 13 78 8c c5 e7 ac af 1a 02 dc 39 9c 18 17 29 5a 6a eb 80 04 00 06 00 01 00 00 80 03 00 06 80 c1 00 00 02 00 01 90 dd 8b 99 6f 00 02 00 00 00 0a 08 00 8d c2 e2 d2 c0 00 00 04 80 08 00 09 c0 0f c1 80 82 00 00 00 80 02 00 24 b7 8f 1f cc 3f 0e 75 8e 8b 56 84 10 55 dd 0b 94 93 d1 3c 3e 46 8d f4 d0 13 9d d1 ab 87 c0 67 50 80 04 00 06 00 01 00 00 80 03 00 06 80 c1 00 00 e9 d9 bf 4e 1e 5e b1 9a 42 ba 07 95 35 b7 a8 de 99 23 1f 47 # SCTP_PACKET
+*** conninput 16
+*** pre sctp_common_input_processing 12 16
+*** post sctp_common_input_processing
+*** conninput done
+Pre recv 54
+Post recv
+
+I 01:20:59.007260 0000 13 89 f9 a1 41 20 09 f0 a2 18 59 10 0b 00 00 04 # SCTP_PACKET
+user_connect exit
+
+O 01:20:59.016903 0000 f9 a1 13 89 dd 8b 99 6f 0b 97 db 41 00 03 00 60 28 41 af b7 00 01 00 00 00 00 00 27 41 41 41 41 41 41 41 41 41 41 41 41 41 41 41 41 41 41 41 41 41 41 41 41 41 41 41 41 41 41 41 41 41 41 41 41 41 41 41 41 41 41 41 41 41 41 41 41 41 41 41 41 41 41 41 41 41 41 41 41 41 41 41 41 41 41 41 41 41 41 41 41 41 41 41 41 41 41 41 41 # SCTP_PACKET
+*** conninput 16
+*** pre sctp_common_input_processing 12 16
+*** post sctp_common_input_processing
+*** conninput done
+Pre recv 54
+Post recv
+
+I 01:21:00.006518 0000 13 89 f9 a1 41 20 09 f0 95 e6 72 6d 03 00 00 10 28 41 af b7 00 02 00 00 00 00 00 00 # SCTP_PACKET
+*** conninput 28
+*** pre sctp_common_input_processing 12 28
+
+O 01:21:01.018104 0000 f9 a1 13 89 dd 8b 99 6f 0b 80 44 7d 07 00 00 08 8d c2 e2 d1 # SCTP_PACKET
+*** post sctp_common_input_processing
+*** conninput done
+Pre recv 54
+Post recv
+
+I 01:21:01.025203 0000 13 89 f9 a1 41 20 09 f0 9b 91 7b 72 08 00 00 04 # SCTP_PACKET
+*** conninput 16
+*** pre sctp_common_input_processing 12 16
+
+O 01:21:02.025893 0000 f9 a1 13 89 dd 8b 99 6f 37 13 9e 99 0e 00 00 04 # SCTP_PACKET
+*** post sctp_common_input_processing
+*** conninput done
+Pre recv 54
+[0;31mE (8089) pthread: pthread_cancel: not supported![0m

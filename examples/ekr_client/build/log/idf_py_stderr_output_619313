@@ -1,0 +1,34 @@
+[0;33m--- esp-idf-monitor 1.4.0 on /dev/ttyACM0 115200 ---[0m
+[0;33m--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H ---[0m
+[0;33m0x40056f6f: memcpy in ROM
+[0m
+[0;33m0x4037ccde: xPortSetInterruptMaskFromISR at /home/rich/ringtail/esp-idf-v5.2.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/include/freertos/portmacro.h:556
+ (inlined by) xPortEnterCriticalTimeout at /home/rich/ringtail/esp-idf-v5.2.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:472
+[0m
+[0;33m0x40056f5c: memcpy in ROM
+0x40056f72: memcpy in ROM
+[0m
+[0;33m0x4037ccdb: xPortSetInterruptMaskFromISR at /home/rich/ringtail/esp-idf-v5.2.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/include/freertos/portmacro.h:556
+ (inlined by) xPortEnterCriticalTimeout at /home/rich/ringtail/esp-idf-v5.2.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:472
+0x4037f0cc: vPortEnterCritical at /home/rich/ringtail/esp-idf-v5.2.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/include/freertos/portmacro.h:571
+ (inlined by) xTaskPriorityDisinherit at /home/rich/ringtail/esp-idf-v5.2.1/components/freertos/FreeRTOS-Kernel/tasks.c:5065
+0x4037c013: prvCopyDataToQueue at /home/rich/ringtail/esp-idf-v5.2.1/components/freertos/FreeRTOS-Kernel/queue.c:2469
+0x4037c49d: xQueueGenericSend at /home/rich/ringtail/esp-idf-v5.2.1/components/freertos/FreeRTOS-Kernel/queue.c:964
+0x40376b11: lock_release_generic at /home/rich/ringtail/esp-idf-v5.2.1/components/newlib/locks.c:192
+0x40376bad: _lock_release at /home/rich/ringtail/esp-idf-v5.2.1/components/newlib/locks.c:198
+0x42007c3a: esp_time_impl_get_boot_time at /home/rich/ringtail/esp-idf-v5.2.1/components/newlib/port/esp_time_impl.c:116
+0x420079b7: adjust_boot_time at /home/rich/ringtail/esp-idf-v5.2.1/components/newlib/time.c:50
+0x42007afc: get_adjusted_boot_time at /home/rich/ringtail/esp-idf-v5.2.1/components/newlib/time.c:91
+0x40376cf8: _gettimeofday_r at /home/rich/ringtail/esp-idf-v5.2.1/components/newlib/time.c:167
+0x4209b279: gettimeofday at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/syscalls/sysgettod.c:11 (discriminator 1)
+0x420650a8: usrsctp_dumppacket at /home/rich/ringtail/usrsctp/usrsctplib/user_socket.c:3209
+0x4200ad5f: conn_output at /home/rich/ringtail/usrsctp/examples/ekr_client/main/main.c:158
+0x4206b69f: sctp_lowlevel_chunk_output at /home/rich/ringtail/usrsctp/usrsctplib/netinet/sctp_output.c:5044
+0x420769c9: sctp_med_chunk_output at /home/rich/ringtail/usrsctp/usrsctplib/netinet/sctp_output.c:9440
+0x42076eaa: sctp_chunk_output at /home/rich/ringtail/usrsctp/usrsctplib/netinet/sctp_output.c:10817
+0x42078525: sctp_lower_sosend at /home/rich/ringtail/usrsctp/usrsctplib/netinet/sctp_output.c:14872
+0x42064fdc: usrsctp_sendv at /home/rich/ringtail/usrsctp/usrsctplib/user_socket.c:899 (discriminator 1)
+0x4200b30d: app_main at /home/rich/ringtail/usrsctp/examples/ekr_client/main/main.c:441
+0x420b252b: main_task at /home/rich/ringtail/esp-idf-v5.2.1/components/freertos/app_startup.c:208
+[0m
+[0m

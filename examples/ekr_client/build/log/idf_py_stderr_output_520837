@@ -1,0 +1,12 @@
+[0;33m--- esp-idf-monitor 1.4.0 on /dev/ttyACM0 115200 ---[0m
+[0;33m--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H ---[0m
+[0;33m0x40056f64: memcpy in ROM
+[0m
+[0;33m0x4037da76: prvSelectHighestPriorityTaskSMP at /home/rich/ringtail/esp-idf-v5.2.1/components/freertos/FreeRTOS-Kernel/tasks.c:3564
+[0m
+[0;33m0x4037da73: prvSelectHighestPriorityTaskSMP at /home/rich/ringtail/esp-idf-v5.2.1/components/freertos/FreeRTOS-Kernel/tasks.c:3564
+0x4037e38a: vTaskSwitchContext at /home/rich/ringtail/esp-idf-v5.2.1/components/freertos/FreeRTOS-Kernel/tasks.c:3641
+0x4037cfbc: _frxt_dispatch at /home/rich/ringtail/esp-idf-v5.2.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/portasm.S:451
+0x4037cfb2: _frxt_int_exit at /home/rich/ringtail/esp-idf-v5.2.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/portasm.S:246
+[0m
+[0m

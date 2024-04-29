@@ -1,0 +1,7 @@
+usage: gdbgui [-h] [-g GDB_CMD] [-p PORT] [--host HOST] [-r]
+              [--auth-file AUTH_FILE] [--user USER] [--password PASSWORD]
+              [--key KEY] [--cert CERT] [--remap-sources REMAP_SOURCES]
+              [--project PROJECT] [-v] [-n] [-b BROWSER] [--debug]
+              [--args ...]
+              [debug_program]
+gdbgui: error: unrecognized arguments: --gdb-args

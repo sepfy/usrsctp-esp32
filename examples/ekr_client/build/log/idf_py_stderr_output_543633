@@ -1,0 +1,12 @@
+[0;33m--- esp-idf-monitor 1.4.0 on /dev/ttyACM0 115200 ---[0m
+[0;33m--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H ---[0m
+[0;33m0x40056f60: memcpy in ROM
+[0m
+[0;33m0x40375a12: panic_abort at /home/rich/ringtail/esp-idf-v5.2.1/components/esp_system/panic.c:472
+0x4037bfb1: esp_system_abort at /home/rich/ringtail/esp-idf-v5.2.1/components/esp_system/port/esp_system_chip.c:93
+0x4037cef6: vApplicationStackOverflowHook at /home/rich/ringtail/esp-idf-v5.2.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:553
+0x4037e387: vTaskSwitchContext at /home/rich/ringtail/esp-idf-v5.2.1/components/freertos/FreeRTOS-Kernel/tasks.c:3630 (discriminator 7)
+0x4037cfbc: _frxt_dispatch at /home/rich/ringtail/esp-idf-v5.2.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/portasm.S:451
+0x4037cfb2: _frxt_int_exit at /home/rich/ringtail/esp-idf-v5.2.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/portasm.S:246
+[0m
+[0m

@@ -1,0 +1,121 @@
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x15 (USB_UART_CHIP_RESET),boot:0x2a (SPI_FAST_FLASH_BOOT)
+Saved PC:0x4037a696
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce3810,len:0x178c
+load:0x403c9700,len:0x4
+load:0x403c9704,len:0xcbc
+load:0x403cc700,len:0x2da0
+entry 0x403c9914
+[0;32mI (26) boot: ESP-IDF v5.2.1-dirty 2nd stage bootloader[0m
+[0;32mI (27) boot: compile time Apr 18 2024 07:45:43[0m
+[0;32mI (27) boot: Multicore bootloader[0m
+[0;32mI (30) boot: chip revision: v0.1[0m
+[0;32mI (34) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (39) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (44) boot.esp32s3: SPI Flash Size : 2MB[0m
+[0;32mI (48) boot: Enabling RNG early entropy source...[0m
+[0;32mI (54) boot: Partition Table:[0m
+[0;32mI (57) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (65) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (72) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (80) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (87) boot: End of partition table[0m
+[0;32mI (91) esp_image: segment 0: paddr=00010020 vaddr=3c0c0020 size=2adf0h (175600) map[0m
+[0;32mI (131) esp_image: segment 1: paddr=0003ae18 vaddr=3fc97e00 size=046f0h ( 18160) load[0m
+[0;32mI (135) esp_image: segment 2: paddr=0003f510 vaddr=40374000 size=00b08h (  2824) load[0m
+[0;32mI (138) esp_image: segment 3: paddr=00040020 vaddr=42000020 size=b34e0h (734432) map[0m
+[0;32mI (277) esp_image: segment 4: paddr=000f3508 vaddr=40374b08 size=13290h ( 78480) load[0m
+[0;32mI (303) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (303) boot: Disabling RNG early entropy source...[0m
+[0;32mI (314) cpu_start: Multicore app[0m
+[0;32mI (324) cpu_start: Pro cpu start user code[0m
+[0;32mI (324) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (324) cpu_start: Application information:[0m
+[0;32mI (327) cpu_start: Project name:     ekr_client[0m
+[0;32mI (332) cpu_start: App version:      signalling_works-64-g820814b-di[0m
+[0;32mI (339) cpu_start: Compile time:     Apr 18 2024 14:41:36[0m
+[0;32mI (345) cpu_start: ELF file SHA256:  edcbaddc7...[0m
+[0;32mI (351) cpu_start: ESP-IDF:          v5.2.1-dirty[0m
+[0;32mI (356) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (361) cpu_start: Max chip rev:     v0.99 [0m
+[0;32mI (366) cpu_start: Chip rev:         v0.1[0m
+[0;32mI (371) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (378) heap_init: At 3FCA0A78 len 00048C98 (291 KiB): RAM[0m
+[0;32mI (384) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (390) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (396) heap_init: At 600FE010 len 00001FD8 (7 KiB): RTCRAM[0m
+[0;32mI (403) spi_flash: detected chip: generic[0m
+[0;32mI (407) spi_flash: flash io: dio[0m
+[0;33mW (411) spi_flash: Detected size(8192k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (424) sleep: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (431) sleep: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (438) main_task: Started on CPU0[0m
+[0;32mI (448) main_task: Calling app_main()[0m
+[0;32mI (478) wifi station: ESP_WIFI_MODE_STA[0m
+[0;32mI (478) pp: pp rom version: e7ae62f[0m
+[0;32mI (478) net80211: net80211 rom version: e7ae62f[0m
+I (488) wifi:wifi driver task: 3fcaad98, prio:23, stack:6656, core=0
+I (508) wifi:wifi firmware version: a9f5b59
+I (508) wifi:wifi certification version: v7.0
+I (508) wifi:config NVS flash: enabled
+I (508) wifi:config nano formating: disabled
+I (508) wifi:Init data frame dynamic rx buffer num: 32
+I (518) wifi:Init static rx mgmt buffer num: 5
+I (518) wifi:Init management short buffer num: 32
+I (528) wifi:Init dynamic tx buffer num: 32
+I (528) wifi:Init static tx FG buffer num: 2
+I (528) wifi:Init static rx buffer size: 1600
+I (538) wifi:Init static rx buffer num: 10
+I (538) wifi:Init dynamic rx buffer num: 32
+[0;32mI (548) wifi_init: rx ba win: 6[0m
+[0;32mI (548) wifi_init: tcpip mbox: 32[0m
+[0;32mI (548) wifi_init: udp mbox: 6[0m
+[0;32mI (558) wifi_init: tcp mbox: 6[0m
+[0;32mI (558) wifi_init: tcp tx win: 5760[0m
+[0;32mI (568) wifi_init: tcp rx win: 5760[0m
+[0;32mI (568) wifi_init: tcp mss: 1440[0m
+[0;32mI (568) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (578) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (588) phy_init: phy_version 640,cd64a1a,Jan 24 2024,17:28:12[0m
+I (628) wifi:mode : sta (34:85:18:8c:50:6c)
+I (628) wifi:enable tsf
+[0;32mI (628) wifi station: wifi_init_sta finished.[0m
+I (638) wifi:new:<2,1>, old:<1,0>, ap:<255,255>, sta:<2,1>, prof:1
+I (648) wifi:state: init -> auth (b0)
+I (648) wifi:state: auth -> assoc (0)
+I (648) wifi:state: assoc -> run (10)
+I (668) wifi:connected with ladybaby, aid = 4, channel 2, 40U, bssid = 18:a6:f7:f4:9b:1a
+I (668) wifi:security: WPA2-PSK, phy: bgn, rssi: -47
+I (668) wifi:pm start, type: 1
+
+I (668) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us
+I (678) wifi:set rx beacon pti, rx_bcn_pti: 0, bcn_timeout: 25000, mt_pti: 0, mt_time: 10000
+I (688) wifi:<ba-add>idx:0 (ifx:0, 18:a6:f7:f4:9b:1a), tid:5, ssn:0, winSize:64
+I (708) wifi:AP's beacon interval = 102400 us, DTIM period = 1
+[0;32mI (1688) esp_netif_handlers: sta ip: 192.168.1.229, mask: 255.255.255.0, gw: 192.168.1.1[0m
+[0;32mI (1688) wifi station: got ip:192.168.1.229[0m
+[0;32mI (1688) wifi station: connected to ap SSID:ladybaby password:4053487993[0m
+
+O 01:47:35.935495 0000 f6 e8 13 89 00 00 00 00 78 23 6b 7f 01 00 00 56 e3 45 64 ad 00 02 00 00 00 0a 08 00 31 8e 37 7d c0 00 00 04 80 08 00 09 c0 0f c1 80 82 00 00 00 80 02 00 24 b0 ea 71 4e 71 45 f9 69 5d e4 43 07 dc cd dd 93 34 19 7c e9 dd 40 6c 60 0d a4 01 bb 19 8e 2a a1 80 04 00 06 00 01 00 00 80 03 00 06 80 c1 00 00 # SCTP_PACKET
+I (1728) wifi:<ba-add>idx:1 (ifx:0, 18:a6:f7:f4:9b:1a), tid:0, ssn:0, winSize:64
+
+I 01:47:35.973204 0000 13 89 f6 e8 e3 45 64 ad d1 9f d8 79 02 00 01 90 12 02 ad 8a 00 02 00 00 00 0a 08 00 f9 70 b2 86 c0 00 00 04 80 08 00 09 c0 0f c1 80 82 00 00 00 80 02 00 24 c5 1d 99 c1 6f 59 bb 26 71 97 f7 1f d1 5c 38 2a ac 07 16 49 d7 91 46 50 b3 9b c4 ea 18 69 cf 94 80 04 00 06 00 01 00 00 80 03 00 06 80 c1 00 00 00 07 01 38 4b 41 4d 45 2d 42 53 44 20 31 2e 31 00 00 00 00 cc 7d 21 66 00 00 00 00 2a 76 09 00 00 00 00 00 60 ea 00 00 00 00 00 00 00 00 00 00 ad 64 45 e3 12 02 ad 8a 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 04 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 04 00 00 00 00 00 00 00 f6 e8 13 89 00 00 01 00 00 00 00 00 00 00 00 00 01 00 00 56 e3 45 64 ad 00 02 00 00 00 0a 08 00 31 8e 37 7d c0 00 00 04 80 08 00 09 c0 0f c1 80 82 00 00 00 80 02 00 24 b0 ea 71 4e 71 45 f9 69 5d e4 43 07 dc cd dd 93 34 19 7c e9 dd 40 6c 60 0d a4 01 bb 19 8e 2a a1 80 04 00 06 00 01 00 00 80 03 00 06 80 c1 00 00 02 00 01 90 12 02 ad 8a 00 02 00 00 00 0a 08 00 f9 70 b2 86 c0 00 00 04 80 08 00 09 c0 0f c1 80 82 00 00 00 80 02 00 24 c5 1d 99 c1 6f 59 bb 26 71 97 f7 1f d1 5c 38 2a ac 07 16 49 d7 91 46 50 b3 9b c4 ea 18 69 cf 94 80 04 00 06 00 01 00 00 80 03 00 06 80 c1 00 00 28 25 03 ab 3b 60 ec d8 8b 83 d8 e1 9f e6 6f 82 be 58 e2 25 # SCTP_PACKET
+
+O 01:47:36.078465 0000 f6 e8 13 89 12 02 ad 8a c1 2c 05 e8 0a 00 01 38 4b 41 4d 45 2d 42 53 44 20 31 2e 31 00 00 00 00 cc 7d 21 66 00 00 00 00 2a 76 09 00 00 00 00 00 60 ea 00 00 00 00 00 00 00 00 00 00 ad 64 45 e3 12 02 ad 8a 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 04 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 04 00 00 00 00 00 00 00 f6 e8 13 89 00 00 01 00 00 00 00 00 00 00 00 00 01 00 00 56 e3 45 64 ad 00 02 00 00 00 0a 08 00 31 8e 37 7d c0 00 00 04 80 08 00 09 c0 0f c1 80 82 00 00 00 80 02 00 24 b0 ea 71 4e 71 45 f9 69 5d e4 43 07 dc cd dd 93 34 19 7c e9 dd 40 6c 60 0d a4 01 bb 19 8e 2a a1 80 04 00 06 00 01 00 00 80 03 00 06 80 c1 00 00 02 00 01 90 12 02 ad 8a 00 02 00 00 00 0a 08 00 f9 70 b2 86 c0 00 00 04 80 08 00 09 c0 0f c1 80 82 00 00 00 80 02 00 24 c5 1d 99 c1 6f 59 bb 26 71 97 f7 1f d1 5c 38 2a ac 07 16 49 d7 91 46 50 b3 9b c4 ea 18 69 cf 94 80 04 00 06 00 01 00 00 80 03 00 06 80 c1 00 00 28 25 03 ab 3b 60 ec d8 8b 83 d8 e1 9f e6 6f 82 be 58 e2 25 # SCTP_PACKET
+
+I 01:47:36.168193 0000 13 89 f6 e8 e3 45 64 ad 54 59 8d 86 0b 00 00 04 # SCTP_PACKET
+
+O 01:47:36.174370 0000 f6 e8 13 89 12 02 ad 8a e6 fd c3 21 00 03 00 60 31 8e 37 7d 00 01 00 00 00 00 00 27 41 41 41 41 41 41 41 41 41 41 41 41 41 41 41 41 41 41 41 41 41 41 41 41 41 41 41 41 41 41 41 41 41 41 41 41 41 41 41 41 41 41 41 41 41 41 41 41 41 41 41 41 41 41 41 41 41 41 41 41 41 41 41 41 41 41 41 41 41 41 41 41 41 41 41 41 41 41 41 41 # SCTP_PACKET
+
+I 01:47:36.206313 0000 13 89 f6 e8 e3 45 64 ad 98 74 41 46 03 00 00 10 31 8e 37 7d 00 02 00 00 00 00 00 00 # SCTP_PACKET
+
+O 01:47:36.215688 0000 f6 e8 13 89 12 02 ad 8a 49 0b 37 81 07 00 00 08 f9 70 b2 85 # SCTP_PACKET
+
+I 01:47:36.225979 0000 13 89 f6 e8 e3 45 64 ad 6d d0 af e4 08 00 00 04 # SCTP_PACKET
+
+O 01:47:36.231120 0000 f6 e8 13 89 12 02 ad 8a 58 29 62 69 0e 00 00 04 # SCTP_PACKET
+exit!
+[0;32mI (2978) main_task: Returned from app_main()[0m

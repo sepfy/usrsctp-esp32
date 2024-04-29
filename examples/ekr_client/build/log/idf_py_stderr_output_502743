@@ -1,0 +1,26 @@
+[0;33m--- esp-idf-monitor 1.4.0 on /dev/ttyACM0 115200 ---[0m
+[0;33m--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H ---[0m
+[0;33m0x40056f6f: memcpy in ROM
+[0m
+[0;33m0x4037a5a8: esp_cpu_compare_and_set at /home/rich/ringtail/esp-idf-v5.2.1/components/esp_hw_support/cpu.c:459
+[0m
+[0;33m0x400556d5: strlen in ROM
+0x400556e5: strlen in ROM
+[0m
+[0;33m0x4037a5a5: esp_coex_common_env_is_chip_wrapper at /home/rich/ringtail/esp-idf-v5.2.1/components/esp_coex/esp32s3/esp_coex_adapter.c:43
+0x4037c847: vPortEnterCritical at /home/rich/ringtail/esp-idf-v5.2.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/include/freertos/portmacro.h:571
+ (inlined by) xQueueReceive at /home/rich/ringtail/esp-idf-v5.2.1/components/freertos/FreeRTOS-Kernel/queue.c:1549
+0x420224df: sys_arch_mbox_fetch at /home/rich/ringtail/esp-idf-v5.2.1/components/lwip/port/freertos/sys_arch.c:317
+0x42022cb3: netconn_recv_data at /home/rich/ringtail/esp-idf-v5.2.1/components/lwip/lwip/src/api/api_lib.c:615
+0x42022d7d: netconn_recv_udp_raw_netbuf_flags at /home/rich/ringtail/esp-idf-v5.2.1/components/lwip/lwip/src/api/api_lib.c:847
+0x42011779: lwip_recvfrom_udp_raw at /home/rich/ringtail/esp-idf-v5.2.1/components/lwip/lwip/src/api/sockets.c:1117
+0x42011d27: lwip_recvfrom at /home/rich/ringtail/esp-idf-v5.2.1/components/lwip/lwip/src/api/sockets.c:1238
+0x42011da6: lwip_recv at /home/rich/ringtail/esp-idf-v5.2.1/components/lwip/lwip/src/api/sockets.c:1283
+0x4200a0fd: recv at /home/rich/ringtail/esp-idf-v5.2.1/components/lwip/include/lwip/sockets.h:38
+ (inlined by) handle_packets at /home/rich/ringtail/usrsctp/examples/ekr_client/main/main.c:127
+0x420027e4: pthread_task_func at /home/rich/ringtail/esp-idf-v5.2.1/components/pthread/pthread.c:196
+0x4037cb0d: vPortTaskWrapper at /home/rich/ringtail/esp-idf-v5.2.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40375988: esp_restart_noos at /home/rich/ringtail/esp-idf-v5.2.1/components/esp_system/port/soc/esp32s3/system_internal.c:159
+[0m
+[0m

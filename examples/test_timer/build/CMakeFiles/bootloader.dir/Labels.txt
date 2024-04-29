@@ -1,0 +1,13 @@
+# Target labels
+ bootloader
+# Source files and their labels
+/home/rich/ringtail/usrsctp/examples/test_timer/build/CMakeFiles/bootloader
+/home/rich/ringtail/usrsctp/examples/test_timer/build/CMakeFiles/bootloader.rule
+/home/rich/ringtail/usrsctp/examples/test_timer/build/CMakeFiles/bootloader-complete.rule
+/home/rich/ringtail/usrsctp/examples/test_timer/build/bootloader-prefix/src/bootloader-stamp/bootloader-build.rule
+/home/rich/ringtail/usrsctp/examples/test_timer/build/bootloader-prefix/src/bootloader-stamp/bootloader-configure.rule
+/home/rich/ringtail/usrsctp/examples/test_timer/build/bootloader-prefix/src/bootloader-stamp/bootloader-download.rule
+/home/rich/ringtail/usrsctp/examples/test_timer/build/bootloader-prefix/src/bootloader-stamp/bootloader-install.rule
+/home/rich/ringtail/usrsctp/examples/test_timer/build/bootloader-prefix/src/bootloader-stamp/bootloader-mkdir.rule
+/home/rich/ringtail/usrsctp/examples/test_timer/build/bootloader-prefix/src/bootloader-stamp/bootloader-patch.rule
+/home/rich/ringtail/usrsctp/examples/test_timer/build/bootloader-prefix/src/bootloader-stamp/bootloader-update.rule

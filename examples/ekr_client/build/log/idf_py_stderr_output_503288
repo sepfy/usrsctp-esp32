@@ -1,0 +1,16 @@
+[0;33m--- esp-idf-monitor 1.4.0 on /dev/ttyACM0 115200 ---[0m
+[0;33m--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H ---[0m
+[0;33m0x4037a69e: esp_cpu_wait_for_intr at /home/rich/ringtail/esp-idf-v5.2.1/components/esp_hw_support/cpu.c:145
+[0m
+[0;33m0x4037d9e2: prvSelectHighestPriorityTaskSMP at /home/rich/ringtail/esp-idf-v5.2.1/components/freertos/FreeRTOS-Kernel/tasks.c:3551
+[0m
+[0;33m0x4037d9df: prvSelectHighestPriorityTaskSMP at /home/rich/ringtail/esp-idf-v5.2.1/components/freertos/FreeRTOS-Kernel/tasks.c:3537 (discriminator 1)
+0x4037e332: vTaskSwitchContext at /home/rich/ringtail/esp-idf-v5.2.1/components/freertos/FreeRTOS-Kernel/tasks.c:3641
+0x4037cfc4: _frxt_dispatch at /home/rich/ringtail/esp-idf-v5.2.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/portasm.S:451
+0x4037cfba: _frxt_int_exit at /home/rich/ringtail/esp-idf-v5.2.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/portasm.S:246
+0x403774e9: _xt_lowint1 at /home/rich/ringtail/esp-idf-v5.2.1/components/xtensa/xtensa_vectors.S:1233
+[0m
+[0;33m0x42009067: uart_ll_get_txfifo_len at /home/rich/ringtail/esp-idf-v5.2.1/components/hal/esp32s3/include/hal/uart_ll.h:387
+ (inlined by) uart_tx_char at /home/rich/ringtail/esp-idf-v5.2.1/components/vfs/vfs_uart.c:165
+[0m
+[0m

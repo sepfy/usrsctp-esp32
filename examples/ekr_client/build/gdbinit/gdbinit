@@ -1,0 +1,4 @@
+
+source /home/rich/ringtail/usrsctp/examples/ekr_client/build/gdbinit/py_extensions
+source /home/rich/ringtail/usrsctp/examples/ekr_client/build/gdbinit/symbols
+source /home/rich/ringtail/usrsctp/examples/ekr_client/build/gdbinit/connect

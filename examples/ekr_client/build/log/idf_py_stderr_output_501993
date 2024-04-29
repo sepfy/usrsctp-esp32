@@ -1,0 +1,23 @@
+[0;33m--- esp-idf-monitor 1.4.0 on /dev/ttyACM0 115200 ---[0m
+[0;33m--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H ---[0m
+[0;33m0x40056f6f: memcpy in ROM
+[0m
+[0;33m0x4037e106: xTaskIncrementTick at /home/rich/ringtail/esp-idf-v5.2.1/components/freertos/FreeRTOS-Kernel/tasks.c:3240
+[0m
+[0;33m0x4037e103: xTaskIncrementTick at /home/rich/ringtail/esp-idf-v5.2.1/components/freertos/FreeRTOS-Kernel/tasks.c:3240
+0x4037d363: xPortSysTickHandler at /home/rich/ringtail/esp-idf-v5.2.1/components/freertos/port_systick.c:217
+0x4037d3e5: SysTickIsrHandler at /home/rich/ringtail/esp-idf-v5.2.1/components/freertos/port_systick.c:143
+0x40377549: _xt_lowint1 at /home/rich/ringtail/esp-idf-v5.2.1/components/xtensa/xtensa_vectors.S:1240
+0x4037a69b: xt_utils_wait_for_intr at /home/rich/ringtail/esp-idf-v5.2.1/components/xtensa/include/xt_utils.h:81
+ (inlined by) esp_cpu_wait_for_intr at /home/rich/ringtail/esp-idf-v5.2.1/components/esp_hw_support/cpu.c:132
+0x4200455a: esp_vApplicationIdleHook at /home/rich/ringtail/esp-idf-v5.2.1/components/esp_system/freertos_hooks.c:59
+0x4037dd1d: prvIdleTask at /home/rich/ringtail/esp-idf-v5.2.1/components/freertos/FreeRTOS-Kernel/tasks.c:4273 (discriminator 1)
+0x4037cb0d: vPortTaskWrapper at /home/rich/ringtail/esp-idf-v5.2.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40375988: esp_restart_noos at /home/rich/ringtail/esp-idf-v5.2.1/components/esp_system/port/soc/esp32s3/system_internal.c:159
+[0m
+[0;33m0x400559e0: _xtos_set_intlevel in ROM
+[0m
+[0;33m0x40375988: esp_restart_noos at /home/rich/ringtail/esp-idf-v5.2.1/components/esp_system/port/soc/esp32s3/system_internal.c:159
+[0m
+[0m
